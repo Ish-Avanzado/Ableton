@@ -133,7 +133,7 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 120rem;
+  max-width: 160rem;
   width: 100%;
   padding: 0 1.5rem;
   margin: 0 auto;
@@ -142,9 +142,63 @@ img {
 /* HEADER */
 .header {
   background: var(--clr-light);
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1.5rem 0;
 }
+
+.header .header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header__wrapper ul li a {
+  color: var(--clr-dark);
+}
+
+.header .header__cta li:first-child a {
+  color: var(--clr-blue);
+}
+.header .header__branding {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.header .header__nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.header .header__cta {
+  display: flex;
+  gap: 3rem;
+}
+
+/* HOME BANNER */
+.homeBanner {
+  background: var(--clr-light);
+}
+.homeBanner ul {
+  display: flex;
+  gap: 3rem;
+  padding: 1.5rem 0;
+}
+
+.homeBanner ul li:first-child {
+  color: var(--clr-primary);
+}
+
+.homeBanner .homeBanner__img h1 {
+  font-size: var(--h1);
+  font-weight: bold;
+  color: var(--clr-primary);
+}
+
+/* .homeBanner__ */
 /* TOGGLE MENU */
-.header .toggle__menu span {
+/* .header .toggle__menu span {
   width: 3rem;
   height: 0.3rem;
   border: 1px solid var(--clr-blue);
@@ -211,4 +265,4 @@ height: 100%;
 z-index: 99;
 }
   
-}
+} */
