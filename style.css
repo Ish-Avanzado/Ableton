@@ -105,6 +105,7 @@ html {
   height: 100%;
 }
 body {
+  background: var(--clr-light);
   color: var(--clr-dark);
   font-family: var(--font);
   font-size: 1.6rem;
@@ -141,7 +142,6 @@ img {
 
 /* HEADER */
 .header {
-  background: var(--clr-light);
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1.5rem 0;
@@ -178,7 +178,7 @@ img {
 
 /* HOME BANNER */
 .homeBanner {
-  background: var(--clr-light);
+  padding-bottom: 10rem;
 }
 .homeBanner ul {
   display: flex;
@@ -190,15 +190,10 @@ img {
   color: var(--clr-primary);
 }
 
-/* .homeBanner .homeBanner__title {
-  background: url("https://placehold.co/100x50"), no-repeat, center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 60vh;
-} */
 .homeBanner .homeBanner__img {
   position: relative;
   text-align: center;
+  margin-bottom: 10rem;
 }
 .homeBanner .homeBanner__img h1 {
   font-size: var(--h1);
@@ -221,6 +216,147 @@ img {
   font-size: var(--h4);
   font-weight: bold;
 }
+.homeBanner .homeBanner__text h4 span {
+  color: var(--clr-blue);
+}
+.homeBanner .homeBanner__text p {
+  margin-top: 3rem;
+}
+
+/* YELLOWIMGS */
+.yellowImgs {
+  padding: 10rem 0;
+  position: relative;
+}
+
+.yellowImgs .yellowImgs__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.yellowImgs .yellowImgs__wrapper img {
+  z-index: 3;
+  margin: 0 auto;
+}
+
+.yellowImgs span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 80rem;
+  width: 55vw;
+  background: var(--clr-yellow);
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+/* VIDDETAILS */
+
+.vidDetails {
+  padding: 10rem 0;
+}
+
+.vidDetails .vidDetails__wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.vidDetails h4 {
+  font-size: var(--h4);
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.vidDetails .vidDetails__img {
+  margin: 10rem 0;
+}
+
+.vidDetails .vidDetails__img small {
+  font-size: 1.2rem;
+}
+
+/* GREENIMGS */
+
+.greenImgs {
+  position: relative;
+}
+
+.greenImgs .greenImgs__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.greenImgs .greenImgs__features {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.greenImgs img {
+  z-index: 3;
+}
+.greenImgs span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 55vw;
+  height: 80rem;
+  background: var(--clr-green);
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+/* VIDINFO */
+.vidInfo {
+  padding: 10rem 0;
+}
+
+.vidInfo .vidInfo__wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.vidInfo h4 {
+  font-size: var(--h4);
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.vidInfo .vidInfo__img {
+  margin: 10rem 0;
+}
+
+.vidInfo .vidInfo__img small {
+  font-size: 1.2rem;
+}
+
+/* PURPLEIMGS */
+.purpleImgs {
+  position: relative;
+}
+.purpleImgs .purpleImgs__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.purpleImgs img {
+  z-index: 4;
+}
+.purpleImgs span::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100rem;
+  height: 80rem;
+  background: var(--clr-green);
+  top: 0;
+  z-index: 3;
+}
+
 /* .homeBanner__ */
 /* TOGGLE MENU */
 /* .header .toggle__menu span {
