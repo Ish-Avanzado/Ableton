@@ -373,17 +373,37 @@ img {
   padding: 3rem 0;
 }
 
-.latest h4,
-.latest p {
+.latest .latest__info h4,
+.latest .latest__info p{
   max-width: 60%;
   margin: 0 auto;
   text-align: justify;
 }
 
-.latest .latest__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.latest .latest__info p{
+  margin-bottom: 5rem;
 }
+
+.latest .latest__img{
+  display: flex;
+  background-color: var(--clr-purple);
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.latest__img--text {
+  max-width:40rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.latest__img--text h4,
+.latest__img--text a {
+font-size: var(--h4);
+font-weight: bold;
+}
+
+
 
 /* .homeBanner__ */
 /* TOGGLE MENU */
