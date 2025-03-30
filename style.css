@@ -292,6 +292,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10rem;
+  margin-top: 5rem;
 }
 
 .greenImgs img {
@@ -345,16 +346,43 @@ img {
 
 .purpleImgs img {
   z-index: 4;
+  margin-top: 5rem;
 }
 .purpleImgs span::before {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 100rem;
-  height: 80rem;
-  background: var(--clr-green);
+  width: 87rem;
+  height: 70rem;
+  background: var(--clr-purple);
   top: 0;
+  /* right: 20%; */
+  margin-left: 29rem;
   z-index: 3;
+}
+
+/* LATEST */
+
+.latest {
+  padding: 10rem 0;
+}
+
+.latest h4 {
+  font-size: var(--h4);
+  font-weight: bold;
+  padding: 3rem 0;
+}
+
+.latest h4,
+.latest p {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.latest .latest__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* .homeBanner__ */
